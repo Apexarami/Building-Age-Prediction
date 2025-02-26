@@ -1,0 +1,51 @@
+# convert images to numpy arrays
+data_1_path = '/content/drive/MyDrive/Intelligent Systems/1921-1930/'
+
+data = []
+
+for img_file in data1:
+
+  image = Image.open(data_1_path + img_file)
+  image = image.resize((128,128))
+  image = image.convert('RGB')
+  image = np.array(image)
+  data.append(image)
+
+
+
+data_2_path = '/content/drive/MyDrive/Intelligent Systems/1931-1940/'
+
+
+for img_file in data2:
+
+  image = Image.open(data_2_path + img_file)
+  image = image.resize((128,128))
+  image = image.convert('RGB')
+  image = np.array(image)
+  data.append(image)
+
+
+
+data_3_path = '/content/drive/MyDrive/Intelligent Systems/1991-2000/'
+
+
+for img_file in data3:
+
+  image = Image.open(data_3_path + img_file)
+  image = image.resize((128,128))
+  image = image.convert('RGB')
+  image = np.array(image)
+  data.append(image)
+
+
+
+data_4_path = '/content/drive/MyDrive/Intelligent Systems/2001-2010/'
+
+
+for img_file in data4:
+
+  image = Image.open(data_4_path + img_file)
+  image = image.resize((128,128))
+  image = image.convert('RGB')
+  image = np.array(image)
+  data.append(image)
