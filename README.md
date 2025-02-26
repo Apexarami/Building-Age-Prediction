@@ -5,14 +5,16 @@ This project predicts the age category of buildings based on images using a Conv
 The dataset consists of images of buildings categorized by their construction years.
 Images are stored in a directory structure where each folder represents an age range (e.g., 1950-1960, 1990-2000).
 The dataset is split into training (80%) and validation (20%) subsets.
+
 **Model Architecture**
 Input: Images of size 180x180 pixels.
 Layers:
-Rescaling layer (Normalization)
-3 Convolutional layers with ReLU activation and max pooling
-Flatten layer
-Dense layer (128 neurons, ReLU activation)
-Output layer (Softmax activation with the number of classes)
+1. Rescaling layer (Normalization)
+2. 3 Convolutional layers with ReLU activation and max pooling
+3. Flatten layer
+4. Dense layer (128 neurons, ReLU activation)
+5. Output layer (Softmax activation with the number of classes)
+
 **Installation & Dependencies**
 To run this project, install the required dependencies:
 pip install tensorflow numpy matplotlib
