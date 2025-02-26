@@ -22,6 +22,7 @@ How to Run
 python train.py
 3. Make Predictions:
 python predict.py --image path/to/image.jpg
+
 **Results**
 The model outputs the predicted age category of the building along with the confidence score.
 Example prediction:
